@@ -1,0 +1,8 @@
+#!/Users/danielcourvoisier/Documents/CloudSync/Etudes/Master/Sem_1/TSM_CloudSys/Labo/Labo_1/cloudsys-lab1-gcp/api-code/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from rsa.cli import encrypt
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(encrypt())
